@@ -46,6 +46,7 @@
     </div>
     <!-- /Loading animation -->
 
+
     <div class="page">
       <div class="page-content">
 
@@ -67,6 +68,7 @@
                 <a href="#resume" class="nav-anim">
                   <span class="menu-icon lnr lnr-graduation-hat"></span>
                   <span class="link-text">Resume</span>
+
                 </a>
               </li>
 
@@ -89,8 +91,10 @@
 
             <div class="header-buttons">
 
-              <a href="#" target="_blank" class="btn btn-primary">Download Resume</a>
+              <a href="https://github.com/jatak000/resume/raw/main/resume-protected.pdf" target="_blank" class="btn btn-primary">Download Resume </a>
             </div>
+            <h4> The Resume is Encrypted, Please contact me for the password.</h4>
+              <p><span id='date-time'></span>
 
 
             <div class="copyrights">© 2022 All rights reserved.</div>
@@ -114,7 +118,7 @@
               <!-- Resume Subpage -->
               <section data-id="resume" class="animated-section">
                 <div class="page-title">
-                  <h2>Resume</h2>
+                  <h2>Resume </h2>
                 </div>
 
                 <div class="section-content">
@@ -489,5 +493,9 @@
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      var dt = new Date();
+      document.getElementById('date-time').innerHTML=dt;
+    </script>
   </body>
 </html>
