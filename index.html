@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
     <title>Sahil Sandhu - Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Sahil Sandhu - Resume" />
@@ -19,14 +18,21 @@
 
     <script src="js/modernizr.custom.js"></script>
     <script>
-document.addEventListener("contextmenu", function(event){
-event.preventDefault();
-alert('Right Click is Disabled');    
-}, false);
-</script>
+      document.addEventListener("contextmenu", function(event){
+        event.preventDefault();
+        alert('Right Click is Disabled');
+      }, false);
+    </script>
+
+    <script>
+      var dt = new Date();
+      document.getElementById('date-time').innerHTML=dt;
+    </script>
+
   </head>
 
   <body>
+
     <!-- Animated Background -->
     <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
     <!-- /Animated Background -->
@@ -46,7 +52,7 @@ alert('Right Click is Disabled');
           <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
               <div class="header-photo">
-                <img src="img/main_photo.jpg" alt="sahil sandhu">
+                <img src="img/main_photo.jpg" alt="Alex Smith">
               </div>
               <div class="header-titles">
                 <h2>Sahil Sandhu</h2>
@@ -82,8 +88,10 @@ alert('Right Click is Disabled');
             </div>
 
             <div class="header-buttons">
+
               <a href="#" target="_blank" class="btn btn-primary">Download Resume</a>
             </div>
+
 
             <div class="copyrights">© 2022 All rights reserved.</div>
           </header>
@@ -371,7 +379,7 @@ alert('Right Click is Disabled');
                     <div class="col-xs-12 col-sm-4">
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-map-marker"></i>
-                        <h4>San Francisco</h4>
+                        <h4>Saskatoon</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
@@ -385,7 +393,7 @@ alert('Right Click is Disabled');
 
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-envelope"></i>
-                        <h4>alex@example.com</h4>
+                        <h4>example@example.com</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
@@ -438,7 +446,7 @@ alert('Right Click is Disabled');
                             </div>
                             <div class="right-column">
                               <div class="form-group form-group-with-icon">
-                                <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                                <label for="form_message"></label><textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
                                 <label>Message</label>
                                 <div class="form-control-border"></div>
                                 <div class="help-block with-errors"></div>
@@ -465,7 +473,6 @@ alert('Right Click is Disabled');
     </div>
 
     <script src="js/jquery-2.1.3.min.js"></script>
-    <script nonce="**CSP_NONCE**">alert('Hello World!!!');</script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/animating.js"></script>
 
